@@ -38,7 +38,7 @@ public Student (){
         return className;
     }
 
-
+/*
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -65,7 +65,7 @@ public Student (){
         this.className = className;
     }
 
-
+*/
 
     /*
         HERE!
@@ -75,17 +75,8 @@ public Student (){
 
     @Override
     public String toString() {
-        if (className.equalsIgnoreCase("MATH")) {
-            return "MathStudent{" +
-                    "firstName='" + firstName + '\'' +
-                    ", lastName='" + lastName + '\'' +
-                    ", age=" + age +
-                    ", gender='" + gender + '\'' +
-                    ", className='" + className + '\'' +
-                    '}';
-        }
-        else return "ScienceStudent{" +
-                "firstName='" + firstName + '\'' +
+        return getClass().getSimpleName() +
+                " {firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +

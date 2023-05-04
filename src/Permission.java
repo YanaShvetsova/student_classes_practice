@@ -25,7 +25,7 @@ public class Permission {
     If the className is Math or Science, then it will do nothing
      */
     public static void checkClassName (String className){
-        if (!className.equalsIgnoreCase("Math") || !className.equalsIgnoreCase("Science"))
+        if (!className.equalsIgnoreCase("Math") && !className.equalsIgnoreCase("Science"))
             throw new RuntimeException(className + " is not allowed!");
     }
 }
